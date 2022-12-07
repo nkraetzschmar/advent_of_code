@@ -1,0 +1,8 @@
+*.o
+*.a
+true
+hello
+echo
+num
+day-*
+!day-*.c
