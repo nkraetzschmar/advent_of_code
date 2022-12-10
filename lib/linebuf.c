@@ -61,7 +61,7 @@ uint64_t linebuf_read(linebuf *f, uint8_t *dst, uint64_t len)
 
 	memcpy(f->buf, dst, write_len);
 	memcpy(end_of_line + 1, f->buf, BUF_LEN - write_len);
-	f->buf[BUF_LEN - write_len] = 0;
+	for (uint64_t i = BUF_LEN - write_len; i < BUF_LEN; ++i) f->buf[i] = 0;
 
 	return write_len;
 }
