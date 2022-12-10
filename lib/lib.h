@@ -30,6 +30,7 @@ void *mremap(void *old_addr, uint64_t old_len, uint64_t new_len, int32_t flags, 
 void memcpy(const uint8_t *src, uint8_t *dst, uint64_t len);
 uint64_t strlen(const uint8_t *buf);
 uint8_t * findchar(uint8_t c, uint8_t *buf);
+int32_t strcmp(const uint8_t *a, const uint8_t *b);
 
 typedef struct linebuf linebuf;
 
